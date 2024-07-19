@@ -1,0 +1,300 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  </head>
+  <body>
+    <div class="navbar-div">
+      <nav id="navbar">
+        <ul>
+          <a class="nav-link" href="#welcome-section"><li>About</li></a>
+          <a class="nav-link" href="#projects"><li>Work</li></a>
+          <a class="nav-link" href="#contact"><li>Contact</li></a>
+        </ul>
+      </nav>
+    </div>
+    <section id="welcome-section">
+      <div class="title">
+        <h1>Hey I am Mimic</h1>
+        <p>a web developer</p>
+      </div>
+    </section>
+    <section id="projects">
+      <h2>These are some of my projects</h2>
+      <div id="projects-container">
+        <div class="project-tile">
+          <a id="project-link" href="https://codepen.io/freeCodeCamp/full/zNqgVx">
+            <figure>
+              <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg">
+              <figcaption>TriBute Page</figcaption>
+            </figure>
+          </a>
+        </div>
+        <div class="project-tile">
+          <figure>
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png">
+            <figcaption>Random Quote Machine</figcaption>
+          </figure>
+        </div>
+        <div class="project-tile">
+          <figure>
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png">
+            <figcaption>Wikipedia Viewer</figcaption>
+          </figure>
+        </div>
+        <div class="project-tile">
+          <figure>
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg">
+            <figcaption>Map Data Across the Globe</figcaption>
+          </figure>
+        </div>
+        <div class="project-tile">
+          <figure>
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png">
+            <figcaption>Calculator</figcaption>
+          </figure>
+        </div>
+        <div class="project-tile">
+          <figure>
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png">
+            <figcaption>Tic Tac Toe Game</figcaption>
+          </figure>
+        </div>
+      </div>
+      <button>SHOW ALL 
+        <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i>
+      </button>
+    </section>
+    <section id="contact">
+      <div class="contact-header">
+        <h2>Let's work together...</h2>
+        <p>How do you take your coffee?</p>
+      </div>
+      <div class="contact-link">
+        <ul>
+          <a id="profile-link" target="_blank" href="https://www.facebook.com/freecodecamp">
+            <li>
+                <i class="fab fa-facebook-square"></i> 
+                Facebook
+            </li>
+          </a>
+          <a id="profile-link" target="_blank"  href="https://github.com/freecodecamp">
+            <li>
+                <i class="fab fa-github"></i> 
+                Github
+            </li>
+          </a>
+          <a id="profile-link" target="_blank" href="https://x.com/freecodecamp">
+            <li>
+                <i class="fab fa-twitter"></i> 
+                Twitter
+            </li>
+          </a>
+          <a id="profile-link"  target="_blank" href="mailto:example@example.com">
+            <li>
+                <i class="fas fa-at"></i> 
+                Email
+            </li>
+          </a>
+          <a id="profile-link" target="_blank" href="tel:555-555-5555">
+            <li>
+                <i class="fas fa-mobile-alt"></i> 
+                Call me
+            </li>
+          </a>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <p>belong to <a href="https://www.facebook.com/vuancutcho.vn">Vupiad</a></p>
+    </footer>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+*{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+li{
+  list-style: none;
+}
+
+.navbar-div{
+  display: flex;
+  justify-content: flex-end;
+  background-color: #DC143C;
+  height: 70px;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+
+  
+}
+nav{
+  
+  padding-right: 40px
+}
+nav > ul{
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+
+}
+nav li{
+  padding: 24px 24px 23px 24px;
+}
+nav li:hover{
+  background-color: #191970;
+}
+
+#welcome-section{
+  width: 100%;
+  height: 100vh;
+  background-color: #2F4F4F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title{
+  text-align: center;
+  padding-top: 250px;
+}
+.title h1{
+  color: white;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+.title p{
+  color: #FF4500;
+  font-size: 24px;
+  font-style: italic;
+}
+
+#projects{
+  background-color: #483D8B;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+#projects h2{
+  text-align: center;
+  color: white;
+  padding: 30px;
+  border-bottom: 2px solid white;
+  font-size: 30px;
+  
+}
+#projects-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 40px
+
+}
+.project-tile{
+  height: 420px;
+  background-color: #708090;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  border-radius: 5px;
+}
+.project-tile figcaption{
+  padding-top: 18px
+}
+.project-tile img{
+  
+  width: 450px;
+  height: 350px;
+  object-fit: cover;
+  
+  
+}
+#projects button{
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color:#708090;
+  color: white; 
+  border-color: #708090;
+  margin-bottom: 30px;
+}
+#projects button:hover{
+  background-color: #DC143C;
+}
+
+
+#contact{
+  background-color: #2F4F4F;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: 100vh;
+}
+
+.contact-header{
+  font-size: 40px;
+
+}
+.contact-header h2{
+  margin-bottom: 20px
+}
+
+
+.contact-header p{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact-link ul{
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  font-size: 20px;
+}
+
+footer{
+  background-color: #2F4F4F;
+  border-top: 5px solid #DC143C ;
+  height: 60px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 18px
+}
+
+@media (max-width: 600px){
+
+}
+
+
+
+
+
+
+
+** end of undefined **
+
